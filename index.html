@@ -4,30 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sky_haihai</title>
+  <title>3020A1</title>
   <!-- <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"> -->
-  <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- Title ↓↓↓ -->
-  <h1 style="padding: 20px;">
-    <img src="logo.jpg" style="width:30px;height:30px;margin-right:10px;">
-    sky_haihai shop
-  </h1>
+  <div
+    style="display: flex; align-items: center; width: 100%; background-color: rgb(32, 32, 49);justify-content: space-between;">
+    <h1 style="padding: 20px;">
+      <img src="logo.jpg" style="width: 20px;height:20px;margin-right:5px;">
+      OO Studio
+    </h1>
+
+    <div class="search-bar" style="flex: 1">
+      <input type="search" style="flex: 1; min-width: 0;" name="search" id="search">
+      <button class="search-btn">Go</button>
+    </div>
+    <img style="width: 25px; height: 25px; filter: invert();margin-right: 20px;flex: none;" src="cart.png" alt="">
+  </div>
   <!-- Title ↑↑↑ -->
+
+  <!-- Navigation ↓↓↓ -->
+  <div style="background-color:rgb(45, 46, 71);height: 100%;padding: 10px 0;">
+    <a class="nav" href="/">Home</a>
+    <a class="nav" href="/">Anatomy</a>
+    <a class="nav" href="/">Animal</a>
+    <a class="nav" href="/">Architecture</a>
+    <a class="nav" href="/">Character</a>
+    <a class="nav" href="/">Food & Drink</a>
+    <a class="nav" href="/">Interior Design</a>
+    <a class="nav" href="/">Plants</a>
+    <a class="nav" href="/">Robot</a>
+    <a class="nav" href="/">Vehicle</a>
+  </div>
+  <!-- Navigation ↑↑↑ -->
+
   <!-- Top ↓↓↓ -->
   <div style="display: flex">
     <!-- Left -->
-    <img src="productImg.png" style="flex: 1;margin:20px;object-fit: cover;">
+    <img src="productImg.png" style="flex: 4;margin:20px;object-fit: cover;">
     <!-- Right -->
-    <div style="flex: 1;margin:20px; overflow: hidden;">
-      <p>p 标签是默认是自动换行的，因此设置好宽度之后，能够较好的实现效果，但是最近的项目中发现，使用ajax 加载数据之后，p 标签内的内容没有换行，导致布局错乱</p>
+    <div style="flex: 5;margin:20px;">
+      <div>
+        <!-- Description -->
+        <p style="line-height: 1.5em"> Stylized model of Ikeda Tsuneoki (池田 恒興) </p>
+
+        <hr>
+        <div style="margin:10px 0">Daimyo Style:</div>
+        <div style="display: flex;margin: 20px 0;gap:5px">
+
+          <input type="radio" name="color-var" id="oda" style="display: none">
+          <label class="option" for="oda">oda</label>
+          <input type="radio" name="color-var" id="saito" style="display: none">
+          <label class="option" for="saito">saito</label>
+          <input type="radio" name="color-var" id="tokugawa" style="display: none">
+          <label class="option" for="tokugawa">tokugawa</label>
+          <!--  <label class="option">Saito
+            <input type="radio" name="color-var" class="">
+          </label>
+
+          <label class="option">Tokugawa
+            <input type="radio" name="color-var">
+          </label> -->
+        </div>
+
+
+        <!--<div style="display:flex">
+          <h2 style="margin: 10px 0"></h2>
+          <div>
+            
+            <input type="radio" id="oda" name="option" value="Oda" class="color-var" checked>
+          </div>
+
+          <div>
+            <input type="radio" id="saito" name="option" value="Saitō" class="color-var">
+          </div>
+
+          <div>
+            <input type="radio" id="tokugawa" name="option" value="Tokugawa" class="color-var">
+          </div>
+        </div>-->
+      </div>
+
+      <button class="action-btn">
+        Add To Cart
+      </button>
     </div>
   </div>
   <!-- Top ↑↑↑ -->
-  <ul style="padding: 20px;">
+  <hr style="margin: 10px 50px;">
+  <!-- Bottom ↓↓↓-->
+  <ul style="padding: 20px; padding-left: 40px; line-height: 1.5em;">
     <li>Pull On closure</li>
     <li>Hand Wash Only</li>
     <li>The high neck design and see-through mesh splicing design, which makes an eye-catching statement and shows the
@@ -51,6 +121,7 @@
       iron.
     </li>
   </ul>
+  <!-- Bottom ↑↑↑-->
 </body>
 
 </html>

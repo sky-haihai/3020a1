@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: black;
   padding: 0;
 }
 
 body {
-  background-color: linen;
+  background-color: #f8eee5;
   max-width: 1100px;
   min-height: 100vh;
   margin: 0 auto;
@@ -15,15 +19,102 @@ img {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 h1,
 p.normal {
-  color: maroon;
+  color: rgb(235, 235, 235);
 }
 
 p.warning {
   color: orange;
 }
+
+ul {
+  list-style: disc;
+}
+
+a.nav {
+  margin: 2px;
+  color: rgb(229, 229, 229);
+  border: solid 1px transparent;
+}
+
+a.nav:hover {
+  border-color: rgb(234, 234, 234);
+}
+
+.action-btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 0;
+  margin: 20px 10px;
+  border-radius: 999px;
+  background-color: salmon;
+  transition: 300ms;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.action-btn:hover {
+  background-color: lightsalmon;
+}
+
+.action-btn:active {
+  background-color: red;
+}
+
+.option {
+  border: solid 1px #aaa;
+  padding: 10px 10px;
+  font-size: 12px;
+  border-radius: 7px;
+  background-color: #eee;
+  width: 100px;
+  position: relative;
+}
+
+:checked+.option {
+  outline: solid 3px orange;
+  border: solid 1px transparent;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 600px;
+  height: 1.5em;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.search-btn {}
+
+/* 
+
+.option {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.option:hover {
+  background-color: rgb(111, 100, 100);
+}
+
+.option input:checked {
+  background-color: #2196F3;
+}
+ */
