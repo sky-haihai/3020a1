@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3020A1</title>
   <!-- <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"> -->
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 <body>
@@ -29,16 +30,16 @@
 
   <!-- Navigation ↓↓↓ -->
   <div style="font-size: 12px; padding: 0 20px; background-color:#f4f4f4;height: 100%;padding: 10px 0;">
-    <a class="nav" href="/">Home</a>
-    <a class="nav" href="/">Anatomy</a>
-    <a class="nav" href="/">Animal</a>
-    <a class="nav" href="/">Architecture</a>
-    <a class="nav" href="/">Character</a>
-    <a class="nav" href="/">Food & Drink</a>
-    <a class="nav" href="/">Interior Design</a>
-    <a class="nav" href="/">Plants</a>
-    <a class="nav" href="/">Robot</a>
-    <a class="nav" href="/">Vehicle</a>
+    <a class="nav" href="/" name="nav-tab">Home</a>
+    <a class="nav" href="/" name="nav-tab">Anatomy</a>
+    <a class="nav" href="/" name="nav-tab">Animal</a>
+    <a class="nav" href="/" name="nav-tab">Architecture</a>
+    <a class="nav" href="/" name="nav-tab">Character</a>
+    <a class="nav" href="/" name="nav-tab">Food & Drink</a>
+    <a class="nav" href="/" name="nav-tab">Interior Design</a>
+    <a class="nav" href="/" name="nav-tab">Plants</a>
+    <a class="nav" href="/" name="nav-tab">Robot</a>
+    <a class="nav" href="/" name="nav-tab">Vehicle</a>
   </div>
   <!-- Navigation ↑↑↑ -->
 
@@ -70,7 +71,7 @@
         </div>
       </div>
 
-      <button class="action-btn">
+      <button class="action-btn" onclick="addToCartBtnHandler()">
         Add To Cart
       </button>
 
@@ -150,7 +151,8 @@
     </a>
   </div>
 
-  <!--  -->
+  <!-- js -->
+  <script src="js/simpleResponse.js"></script>
 </body>
 
 </html>
