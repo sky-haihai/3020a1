@@ -7,7 +7,8 @@ function navigationBtnHandler(){
     return false;
 }
 
-let navBar=document.getElementsByName('nav-tab');
-navBar.forEach(element => {
-    element.addEventListener('click',navigationBtnHandler);
-});
+const elements=document.getElementsByClassName('nav');
+
+for (const el of elements) {
+    el.addEventListener('click',navigationBtnHandler);
+}
