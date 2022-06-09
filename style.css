@@ -109,13 +109,23 @@ a.nav:hover {
 .search-bar {
   display: flex;
   max-width: 600px;
-  height: 1.5em;
-  border-radius: 7px;
+  height: 1.75em;
+  border-radius: 5px;
   overflow: hidden;
   margin: 0 20px;
+  border: solid 1px rgb(71, 68, 68);
 }
 
-.search-btn {}
+.search-bar>* {
+  border: none;
+}
+
+.search-btn {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: salmon;
+}
 
 /* 
 
